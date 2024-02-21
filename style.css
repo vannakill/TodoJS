@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+body{
+    background-color: whitesmoke;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+/* theme switcher container */
+.switch-container{
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.switch-container p{
+  margin-inline:20px ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*add item block */
+.add-container{
+ margin: 20px 0;
+}
+
+.add-container h3, hr{
+    margin-bottom: 5px;
+}
+
+.add-container input{
+    width: 200px;
+    margin-inline-end: 5px;
+}
+
+.add-container button{
+    background: none;
+    border:none;
+    color: gray;
+    font-size: 14px;
+}
+
+.add-container button:hover{
+    color: black;
+}
+/* todo block */
+#todo-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 241px;
+}
+.todo-container{
+    width: 241px;
+}
+
+li{
+    display: grid;
+    align-self: center;
+    width: 200px;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* task block */
+.task-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+ul{
+    padding: 0;
+}
+
+/* done block */
+.done-container{
+    display: flex;
+    flex-direction: column;
+    width: 241px;
+    margin-top: 30px;
+}
+
+/* delete button */
+.delete{
+    width: 30px;
+    height: 30px;
+    background-image: url(svg/deletelight.svg);
+    background-color: inherit;
+    border: 0px;
+    transform: rotate(45deg);
+}
+.delete:hover{
+    transform: rotate(0deg);
+    transition: 0.5s all;
+}
+.delete:not(:hover){
+    transition: 0.5s all;
+}
+
+/* dark theme */
+  .dark-body{
+    background-color: #22262D;
+    color: white;
+  }
+
+  .dark-input{
+    background-color: #3e4451;
+    border: 1px solid #49515f;
+    color: white;
+  }
+
+  .header-dark{
+    background-color: #282C34;
+  }
+
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4a535a;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4a535a;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+

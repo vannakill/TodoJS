@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <header>
+        <h2>Todo List</h2>
+        <div class="switch-container">
+            <p>Change theme</p>
+            <label for="themeSwitcher" class="switch">
+                <input type="checkbox" id="themeSwitcher" onchange="darkTheme()" name="theme">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <div class="container">
+        <div class="add-container">
+            <h3>Add item</h3><hr>
+                <input type="text" id="task-name" maxlength="17" minlength="2" required>
+                <button onclick="main()">Add</button>
+        </div>
+        <div class="todo-container" id="todo">
+            <h3>TODO</h3><hr>
+            <div class="todo-list">
+                <ul id="todo-task">
+                </ul>
+            </div>
+        </div>
+        <div id="finished" class="done-container">
+            <h3>Done</h3>
+            <hr>
+    </div>
+      </div>
+    </div>
+</body>
+</html>
